@@ -1,0 +1,8 @@
+.height {
+  height: 100%;
+}
+
+.body_card:hover {
+  cursor: pointer;
+  color: #71abb0;
+}
