@@ -8,5 +8,4 @@ import { Product } from 'src/app/interfaces/product.interface';
 })
 export class CardPrductsComponent {
   @Input() product!: Product;
-  //TODO:Diseñar viwe-product
 }
