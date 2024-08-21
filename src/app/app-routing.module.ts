@@ -7,12 +7,14 @@ import { ShoppingCardComponent } from './pages/shopping-card/shopping-card.compo
 import { LoginComponent } from './pages/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { loginGuard } from './guards/login.guard';
+import { ReviewsComponent } from './pages/reviews/reviews.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'viewproduct/:idproduct', component: ViewProductComponent },
+  { path: 'review/:idproduct', component: ReviewsComponent },
   { path: 'cart', component: ShoppingCardComponent },
   { path: 'login', component: LoginComponent, canActivate: [loginGuard] },
   { path: '**', component: NotFoundComponent },
