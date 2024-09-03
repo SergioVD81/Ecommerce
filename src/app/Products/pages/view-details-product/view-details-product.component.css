@@ -1,0 +1,40 @@
+.container__article > * {
+  flex-basis: 100%;
+}
+.image {
+  width: 92%;
+  height: 120%;
+}
+
+.col__center__rating {
+  display: flex;
+  justify-content: center;
+}
+.price__line-through {
+  text-decoration: line-through;
+}
+.pop-pup {
+  width: 15%;
+}
+.price_warranty {
+  font-size: medium;
+  color: blue;
+  cursor: pointer;
+}
+
+.price_warranty:hover {
+  text-decoration: underline;
+}
+
+.warranty__close {
+  display: flex;
+  justify-content: end;
+}
+.warranty__icon {
+  cursor: pointer;
+  padding: 2px;
+}
+
+.warranty__icon:hover {
+  color: #a4acad;
+}

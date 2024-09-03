@@ -1,0 +1,14 @@
+<div class="carView__price">
+    <p class="fs-4 fw-bold">{{product?.total_price}}€</p>
+</div>
+<div class="carView__delivery">
+    <p>Entrega gratis el <span class="fw-bold"> {{deliveryDate()}}</span></p>
+    <p>Entrega más rápida <span class="fw-bold">{{fasterDelivery()}}</span></p>
+</div>
+
+<div class="carView__orders">
+    <p class="text-success fs-3 fw-normal"> {{getStock()}} </p>
+    <input class="form-control" type="number" [(ngModel)]="cantidad" min="1" max="20">
+    <button class="btn btn-warning my-2 button w-100" (click)="addProduct(product)">Añadir a la cesta</button>
+    <button class="btn btn-warning my-2 button w-100">Comprar ya</button>
+</div>

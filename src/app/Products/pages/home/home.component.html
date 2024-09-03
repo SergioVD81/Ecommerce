@@ -1,0 +1,11 @@
+<section class="container mt-3">
+
+    <p *ngIf="(loading$ |async)">Cargando...</p>
+    <div class="row g-3 ">
+        <article>
+            <products-card-products></products-card-products>
+        </article>
+
+    </div>
+
+</section>

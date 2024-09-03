@@ -1,0 +1,19 @@
+/* .container__img {
+  background-color: black;
+} */
+.images {
+  width: 10rem;
+  margin: 0 auto;
+}
+.content__information-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.content__information-input::-webkit-outer-spin-button,
+.content__information-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  background-color: beige;
+}
+.content__total {
+  border-top: 2px solid black;
+}

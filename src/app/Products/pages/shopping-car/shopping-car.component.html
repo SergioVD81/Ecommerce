@@ -1,0 +1,31 @@
+<section class="container mt-5">
+    <h3>Cesta</h3>
+    <hr>
+    <article class="d-flex flex-column ">
+        <div class="d-flex justify-content-center   " *ngFor="let product of product">
+            <div class="container__img w-50 my-2">
+                <a [routerLink]=" ['/view-product',product?.id]" routerLinkActive="router-link-active"><img
+                        class=" images" [src]="product?.images?.[0]" [alt]="product?.title"></a>
+            </div>
+            <div class="content__information w-50 d-flex flex-column justify-content-center">
+                <h5 class=" content__information-title  fs-5"> {{product?.title}}</h5>
+                <p [ngStyle]="{color:getStock(product)==='Stock'?'green':'red'}"> {{getStock(product)}} </p>
+                <input class="content__information-input form-control w-25 " type="number" [value]="product.amount"
+                    min="0" [(ngModel)]="product.amount" (ngModelChange)="getPriceDescount(product)">
+            </div>
+
+            <div class="content__price d-flex align-items-center">
+
+                <p><span class="fw-bold">
+                        {{getPriceDescount(product)}}€
+                    </span></p>
+            </div>
+
+        </div>
+
+    </article>
+
+    <div class="content__total d-flex justify-content-end pt-3">
+        <p class="fs-5">Subtotal ({{totalProducts}}):<span class="fw-bolder">{{total}}€ </span></p>
+    </div>
+</section>
